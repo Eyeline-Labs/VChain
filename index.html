@@ -1,1 +1,289 @@
-VChain is coming soon — the project page will go live this afternoon (Oct 6, PDT).
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="VChain: Chain-of-Visual-Thought for Reasoning in Video Generation">
+  <meta name="keywords" content="Video Generation, Reasoning, Video Diffusion Models, Text-to-Video, AIGC, Large Language Model, LLM, MLLM, Multimodal Large Language Model">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VChain: Chain-of-Visual-Thought for Reasoning in Video Generation</title>
+
+<!--   Global site tag (gtag.js) - Google Analytics-->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y5ZVQZ7NHC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y5ZVQZ7NHC');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./assets/js/fontawesome.all.min.js"></script>
+  <script src="./assets/js/bulma-carousel.min.js"></script>
+  <script src="./assets/js/bulma-slider.min.js"></script>
+  <script src="./assets/js/index.js"></script>
+
+  <!-- custom css file  -->
+  <link rel="stylesheet" href="./assets/css/twentytwenty.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- title -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><span style="color:#a9195c; font-weight: bold; font-style: italic">VChain</span> : Chain-of-Visual-Thought for Reasoning in Video Generation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <span class="author-block">
+                <a href="https://ziqihuangg.github.io" target="_blank">Ziqi Huang</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://ningyu1991.github.io/" target="_blank">Ning Yu</a><sup>2✉&#8224</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://gordonchen19.github.io" target="_blank">Gordon Chen</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="http://haonanqiu.com/" target="_blank">Haonan Qiu</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.pauldebevec.com/" target="_blank">Paul Debevec</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://liuziwei7.github.io/" target="_blank">Ziwei Liu</a><sup>1✉</sup>
+              </span>
+          </div>
+        
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">✉ corresponding authors.    &#8224 project lead </span>
+          </div>
+          
+        <div class="is-size-5 publication-authors">
+          <span class="author-block"><sup>1</sup> Nanyang Technological University    <sup>2</sup> Eyeline Labs</span>
+        </div>
+
+        <div class="column has-text-centered">
+          <div class="publication-links">
+            <!-- Paper Link. -->
+            <span class="link-block">
+              <a href="https://arxiv.org/abs/2510.xxxxx" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv</span>
+              </a>
+            </span>
+            <!-- Code Link. -->
+            <span class="link-block">
+              <a href="https://github.com/Eyeline-Labs/VChain" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>GitHub</span>
+              </a>
+            </span>
+            <!-- Video Link. -->
+            <span class="link-block">
+              <a href="https://www.youtube.com/watch?v=HV4uAHJwt1k" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-youtube"></i>
+                </span>
+                <span>Video</span>
+              </a>
+            </span>
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper video. -->
+<section class="hero is-small">
+  <div class="columns is-centered has-text-centered"  style="margin-top: 10px; margin-bottom: 20px;">
+    <div class="column is-three-fifths">
+      <!-- <h2 class="title is-3">VChain Demo</h2> -->
+      <div class="publication-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HV4uAHJwt1k?si=ms86nwZryxt72Rh6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- / Paper video.   -->
+
+
+<!-- Abstract. -->
+<section class="section" style="margin-top:-50px; margin-bottom:-50px;">
+  <div class="container is-max-desktop ">
+    <div class="columns is-centered has-text-centered" style="margin-top: 10px; margin-bottom: 0px;">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent video generation models can produce smooth and visually appealing clips, but they often struggle to synthesize complex dynamics with a coherent chain of consequences. Accurately modeling visual outcomes and state transitions over time remains a core challenge. In contrast, large language and multimodal models (e.g., GPT-4o) exhibit strong visual state reasoning and future prediction capabilities. To bridge these strengths, we introduce <b>VChain</b>, a novel inference-time <em>chain-of-visual-thought</em> framework that injects visual reasoning signals from multimodal models into video generation. Specifically, VChain contains a dedicated pipeline that leverages large multimodal models to generate a sparse set of critical keyframes as snapshots, which are then used to guide the <em>sparse inference-time tuning</em> of a pre-trained video generator only at these key moments. Our approach is tuning-efficient, introduces minimal overhead and avoids dense supervision. Extensive experiments on complex, multi-step scenarios show that VChain significantly enhances the quality of generated videos.
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+<!--/ Abstract. -->
+
+
+<!--/ Overview of VChain. -->
+<section class="section" style="margin-top:-50px; margin-bottom:-50px;">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <div class="section-title">
+          <h2 class="title is-3 is-centered">Overview of VChain</h2>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div class="publication-img">
+              <img id="architecture" src="./assets/images/fig_paper_teaser.pdf" style="width:1000px; margin-top:10px;margin-bottom:10px;"/>
+            </div>
+          </div>
+        </div>
+        <p>
+          <figcaption><strong>Overview of VChain.</strong> We introduce <strong>VChain</strong>, an inference-time tuning framework for reasoning in video generation. Given a user-provided prompt (<em>e.g.</em>, <em>“A rock and a feather are falling from the sky towards the ground.”</em>), VChain leverages large multimodal models to generate a <em>Chain of Visual Thoughts</em>, which are a sparse set of causally important keyframes to guide the video generator via <em>Sparse Inference-Time Tuning</em>. VChain effectively improves reasoning in video generation without extensive re-training.</figcaption>
+        </p>
+    </div>
+  </div>
+</section>
+
+
+
+<!--/ VChain Framework. -->
+<section class="section" style="margin-top:-50px; margin-bottom:-50px;">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <div class="section-title">
+          <h2 class="title is-3 is-centered">VChain Framework</h2>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div class="publication-img">
+              <img id="architecture" src="./assets/images/fig_paper_framework.pdf" style="width:1000px; margin-top:10px;margin-bottom:10px;"/>
+            </div>
+          </div>
+        </div>
+        <p>
+          An overview of our three-stage inference-time pipeline for reasoning in video generation. 
+            <strong>(a) Visual Thought Reasoning:</strong> Given a user-provided text prompt, a large multimodal model (GPT-4o) infers a causal chain of events and generates a sequence of keyframes, termed the <em>Chain of Visual Thoughts</em>, via iterative reasoning and image synthesis. 
+            <strong>(b) Sparse Inference-Time Tuning:</strong> These visual thoughts (paired with their corresponding textual thoughts) serve as sparse supervision for fine-tuning a pre-trained video generator via LoRA. 
+            <strong>(c) Video Sampling:</strong> The full sequence of textual thoughts is concatenated to form a single prompt, which is used to prompt the fine-tuned model in generating the final video output.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- BibTeX -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+
+    <h2 class="title">BibTeX</h2>
+    <p>If you find our work useful, please consider citing our paper:</p>
+    <pre><code>
+      @article{huang2025vchain,
+        title={{VChain}: Chain-of-Visual-Thought for Reasoning in Video Generation},
+        author = {Huang, Ziqi and Yu, Ning and Chen, Gordon and Qiu, Haonan and Debevec, Paul and Liu, Ziwei},
+        journal={arXiv preprint arXiv:2510.xxxxx},
+        year={2025}
+      }  
+    </code></pre>
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2510.xxxxx">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/Eyeline-Labs/VChain" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="icon-link"
+      href="https://www.youtube.com/watch?v=HV4uAHJwt1k">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> project page. If you want to reuse their <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit them appropriately.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container", style="width: 20%">
+    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=P8Xfm_38OsgZnaqtwbnM9AC8Lhe2MQpZ4lIswi1SB3Y&cl=ffffff&w=a"></script>
+  </div>
+</footer>
+
+<!-- custom js file  -->
+<!-- <script defer src="./assets/js/fontawesome.all.min.js"></script> -->
+<script src="./assets/js/bulma-carousel.min.js"></script>
+<script src="./assets/js/bulma-slider.min.js"></script>
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/jquery.event.move.js"></script>
+<script src="./assets/js/jquery.twentytwenty.js"></script>
+<script>
+$(function(){
+  $(".twentytwenty-container").twentytwenty();
+  // $(".twentytwenty-container", "#results-carousel").twentytwenty({default_offset_pct: 0.5, ratio: 0.5});
+});
+$(function(){
+  $(".twentytwenty-container").twentytwenty({
+    default_offset_pct: 0.5, // How much of the before image is visible when the page loads
+    orientation: 'horizontal', // Orientation of the before and after images ('horizontal' or 'vertical')
+    // before_label: 'January 2017', // Set a custom before label
+    // after_label: 'March 2017', // Set a custom after label
+    // no_overlay: true, //Do not show the overlay with before and after
+    // move_slider_on_hover: true, // Move slider on mouse hover?
+    // move_with_handle_only: true, // Allow a user to swipe anywhere on the image to control slider movement. 
+    // click_to_move: false // Allow a user to click (or tap) anywhere on the image to move the slider to that location.
+  });
+});
+</script>
+
+  
+
+</body>
+</html>
