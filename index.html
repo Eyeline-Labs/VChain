@@ -265,117 +265,179 @@
 
 <div class="container blog extra-large white">
 
-
-
-
-<div class="container blog extra-large white">
-
-
-  <!-- A Row of Videos -->
-  <!-- <div class="slide-content" data-slide="0" style="display: block;">
-    <div class="columns-4" style="display: flex; justify-content: space-between; align-items: center; gap: 10px;">
-      <figure style="text-align: center; flex: 1;">
-        <video autoplay controls muted loop playsinline style="width: 100%;">
-          <source src="assets/videos/comparisons/test/1_t2v.mp4" type="video/mp4">
-        </video>
-        <figcaption style="margin-top: 8px;"><b>T2V</b></figcaption>
-      </figure>
-      <figure style="text-align: center; flex: 1;">
-        <video autoplay controls muted loop playsinline style="width: 100%;">
-          <source src="assets/videos/comparisons/test/2_t2v_aug_prompt.mp4" type="video/mp4">
-        </video>
-        <figcaption style="margin-top: 8px;"><b>T2V + Prompt Aug</b></figcaption>
-      </figure>
-      <figure style="text-align: center; flex: 1;">
-        <video autoplay controls muted loop playsinline style="width: 100%;">
-          <source src="assets/videos/comparisons/test/3_t2v_concat_prompt.mp4" type="video/mp4">
-        </video>
-        <figcaption style="margin-top: 8px;"><b>Without Visual Thought</b></figcaption>
-      </figure>
-      <figure style="text-align: center; flex: 1;">
-        <video autoplay controls muted loop playsinline style="width: 100%;">
-          <source src="assets/videos/comparisons/test/4_amt_interpolation.mp4" type="video/mp4">
-        </video>
-        <figcaption style="margin-top: 8px;"><b>Without Sparse Tuning</b></figcaption>
-      </figure>
-      <figure style="text-align: center; flex: 1;">
-        <video autoplay controls muted loop playsinline style="width: 100%;">
-          <source src="assets/videos/comparisons/test/5_vchain_ours.mp4" type="video/mp4">
-        </video>
-        <figcaption style="margin-top: 8px;"><b>VChain (Ours)</b></figcaption>
-      </figure>
-    </div>
-  </div> -->
-
-
-  <!-- CSS：放到 <style> 里 -->
+<!-- Put this style ONCE near the top -->
 <style>
-  .video-row{
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0,1fr)); /* 5列 */
-    gap: 16px;
-    align-items: start; /* 让卡片顶部对齐 */
+  :root{
+    --prompt-gap: 8px;     /* space between prompt and its videos */
+    --block-gap: 56px;     /* space between blocks */
   }
-  .video-card{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  .example-block{ margin: 0 0 var(--block-gap); }
+  .prompt-line{
+    display:flex; justify-content:center; align-items:baseline; gap:6px;
+    font-size:1.15rem; margin: 0 0 var(--prompt-gap);
   }
-  .video-card video{
-    width: 100%;
-    aspect-ratio: 16 / 9;   /* 统一比例，或改 1/1、4/3 等 */
-    height: auto;           /* 等比缩放 */
-    object-fit: cover;      /* 溢出裁切，保证一致外观 */
-    display: block;         /* 去掉行内空隙 */
+  .prompt-line .label{
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; font-weight:600;
   }
-  .video-card figcaption{ margin-top: 8px; font-weight: 700; }
-  /* 响应式：窄屏自动换行 */
-  @media (max-width: 1200px){ .video-row{ grid-template-columns: repeat(3,1fr);} }
-  @media (max-width: 768px){ .video-row{ grid-template-columns: repeat(2,1fr);} }
+  .prompt-line .content{
+    font-family:"Chalkboard","Chalkboard SE","Caveat",cursive; font-style:italic;
+  }
+  .video-row{ display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:16px; align-items:start; }
+  .video-card{ display:flex; flex-direction:column; text-align:center; }
+  .video-card video{ width:100%; aspect-ratio:16/9; object-fit:cover; display:block; }
+  .video-card figcaption{ margin-top:6px; font-weight:700; }
+  @media (max-width:1200px){ .video-row{ grid-template-columns:repeat(3,1fr);} }
+  @media (max-width:768px){ .video-row{ grid-template-columns:repeat(2,1fr);} }
 </style>
 
-<!-- HTML -->
-<div class="slide-content" data-slide="0" style="display:block;">
+<!-- ===== rock_feather ===== -->
+<section class="example-block">
+  <p class="prompt-line">
+    <span class="label">Input Prompt:</span>
+    <span class="content">A rock and a feather falling from the sky towards the ground.</span>
+  </p>
   <div class="video-row">
     <figure class="video-card">
       <video autoplay controls muted loop playsinline>
-        <source src="assets/videos/comparisons/test/1_t2v.mp4" type="video/mp4">
-      </video>
-      <figcaption>T2V</figcaption>
+        <source src="assets/videos/comparisons/rock_feather/1_t2v.mp4" type="video/mp4">
+      </video><figcaption>T2V</figcaption>
     </figure>
-
     <figure class="video-card">
       <video autoplay controls muted loop playsinline>
-        <source src="assets/videos/comparisons/test/2_t2v_aug_prompt.mp4" type="video/mp4">
-      </video>
-      <figcaption>T2V + Prompt Aug</figcaption>
+        <source src="assets/videos/comparisons/rock_feather/2_t2v_aug_prompt.mp4" type="video/mp4">
+      </video><figcaption>T2V + Prompt Aug</figcaption>
     </figure>
-
     <figure class="video-card">
       <video autoplay controls muted loop playsinline>
-        <source src="assets/videos/comparisons/test/3_t2v_concat_prompt.mp4" type="video/mp4">
-      </video>
-      <figcaption>Without Visual Thought</figcaption>
+        <source src="assets/videos/comparisons/rock_feather/3_t2v_concat_prompt.mp4" type="video/mp4">
+      </video><figcaption>Without Visual Thought</figcaption>
     </figure>
-
     <figure class="video-card">
       <video autoplay controls muted loop playsinline>
-        <source src="assets/videos/comparisons/test/4_amt_interpolation_h264.mp4" type="video/mp4">
-      </video>
-      <figcaption>Without Sparse Tuning</figcaption>
+        <source src="assets/videos/comparisons/rock_feather/4_amt_interpolation_h264.mp4" type="video/mp4">
+      </video><figcaption>Without Sparse Tuning</figcaption>
     </figure>
-
     <figure class="video-card">
       <video autoplay controls muted loop playsinline>
-        <source src="assets/videos/comparisons/test/5_vchain_ours.mp4" type="video/mp4">
-      </video>
-      <figcaption>VChain (Ours)</figcaption>
+        <source src="assets/videos/comparisons/rock_feather/5_vchain_ours.mp4" type="video/mp4">
+      </video><figcaption>VChain (Ours)</figcaption>
     </figure>
   </div>
-</div>
+</section>
 
 
-</div>
+<!-- ===== Ice-cream ===== -->
+<section class="example-block">
+  <p class="prompt-line">
+    <span class="label">Input Prompt:</span>
+    <span class="content">An ice cream cone is left out in the sun.</span>
+  </p>
+  <div class="video-row">
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/Ice-cream/1_t2v.mp4" type="video/mp4">
+      </video><figcaption>T2V</figcaption>
+    </figure>
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/Ice-cream/2_t2v_aug_prompt.mp4" type="video/mp4">
+      </video><figcaption>T2V + Prompt Aug</figcaption>
+    </figure>
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/Ice-cream/3_t2v_concat_prompt.mp4" type="video/mp4">
+      </video><figcaption>Without Visual Thought</figcaption>
+    </figure>
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/Ice-cream/4_amt_interpolation_h264.mp4" type="video/mp4">
+      </video><figcaption>Without Sparse Tuning</figcaption>
+    </figure>
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/Ice-cream/5_vchain_ours.mp4" type="video/mp4">
+      </video><figcaption>VChain (Ours)</figcaption>
+    </figure>
+  </div>
+</section>
+
+
+
+<!-- ===== duck_rock ===== -->
+<section class="example-block">
+  <p class="prompt-line">
+    <span class="label">Input Prompt:</span>
+    <span class="content">A rubber duck and a rock fall into a water tank.</span>
+  </p>
+  <div class="video-row">
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/duck_rock/1_t2v.mp4" type="video/mp4">
+      </video><figcaption>T2V</figcaption>
+    </figure>
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/duck_rock/2_t2v_aug_prompt.mp4" type="video/mp4">
+      </video><figcaption>T2V + Prompt Aug</figcaption>
+    </figure>
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/duck_rock/3_t2v_concat_prompt.mp4" type="video/mp4">
+      </video><figcaption>Without Visual Thought</figcaption>
+    </figure>
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/duck_rock/4_amt_interpolation_h264.mp4" type="video/mp4">
+      </video><figcaption>Without Sparse Tuning</figcaption>
+    </figure>
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/duck_rock/5_vchain_ours.mp4" type="video/mp4">
+      </video><figcaption>VChain (Ours)</figcaption>
+    </figure>
+  </div>
+</section>
+
+
+<!-- ===== steel_water ===== -->
+<section class="example-block">
+  <p class="prompt-line">
+    <span class="label">Input Prompt:</span>
+    <span class="content">A steel ball is dropped into water.</span>
+  </p>
+  <div class="video-row">
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/steel_water/1_t2v.mp4" type="video/mp4">
+      </video><figcaption>T2V</figcaption>
+    </figure>
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/steel_water/2_t2v_aug_prompt.mp4" type="video/mp4">
+      </video><figcaption>T2V + Prompt Aug</figcaption>
+    </figure>
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/steel_water/3_t2v_concat_prompt.mp4" type="video/mp4">
+      </video><figcaption>Without Visual Thought</figcaption>
+    </figure>
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/steel_water/4_amt_interpolation_h264.mp4" type="video/mp4">
+      </video><figcaption>Without Sparse Tuning</figcaption>
+    </figure>
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/steel_water/5_vchain_ours.mp4" type="video/mp4">
+      </video><figcaption>VChain (Ours)</figcaption>
+    </figure>
+  </div>
+</section>
+
+
+
+
+
 
 
 </div>
