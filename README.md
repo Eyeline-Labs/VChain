@@ -1,4 +1,4 @@
-[![arXiv](https://img.shields.io/badge/arXiv-2510.xxxxx-a9195c?logo=arxiv&logoColor=a9195c)](https://arxiv.org/abs/2510.xxxxx)
+[![arXiv](https://img.shields.io/badge/arXiv-2510.05094-a9195c?logo=arxiv&logoColor=a9195c)](https://arxiv.org/abs/2510.05094)
 [![Project Page](https://img.shields.io/badge/Project-Website-a9195c?logo=googlechrome&logoColor=a9195c)](https://eyeline-labs.github.io/VChain/) 
 [![Video](https://img.shields.io/badge/YouTube-Demo-a9195c?logo=youtube&logoColor=a9195c)](https://www.youtube.com/watch?v=HV4uAHJwt1k)
 ![Visitors](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2Feyeline-labs%2FVChain&label=Visitors&icon=people&color=%23a9195c)
@@ -56,12 +56,11 @@ An overview of our three-stage inference-time pipeline for reasoning in video ge
 
 ## 🔗 Links
 
-- 📄 **Paper (arXiv):** https://arxiv.org/abs/2510.xxxxx  
+- 📄 **Paper (arXiv):** https://arxiv.org/abs/2510.05094  
 - 🌐 **Project Page:** https://eyeline-labs.github.io/VChain/  
 - 💻 **Code:** https://github.com/Eyeline-Labs/VChain  
 - 🎬 **Video:** https://www.youtube.com/watch?v=HV4uAHJwt1k
 
----
 
 ## 🪶 Citation
 
@@ -71,6 +70,6 @@ If you find our work useful, please consider citing:
 @article{huang2025vchain,
   title={{VChain}: Chain-of-Visual-Thought for Reasoning in Video Generation},
   author = {Huang, Ziqi and Yu, Ning and Chen, Gordon and Qiu, Haonan and Debevec, Paul and Liu, Ziwei},
-  journal={arXiv preprint arXiv:2510.xxxxx},
+  journal={arXiv preprint arXiv:2510.05094},
   year={2025}
 }
