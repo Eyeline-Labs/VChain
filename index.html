@@ -203,6 +203,187 @@
 </section>
 
 
+
+<!-- Instance Matting -->
+<section class="section">
+  <div class="container is-max-desktop">
+<div class="columns is-centered has-text-centered">
+  <div class="column">
+
+  <h2 class="title is-3">Examples</h2>
+  <!-- <p style="font-size: 0.95rem; color: #be2020; margin-top: -20px; margin-bottom: 25px;">
+    (Click full screen for best view)
+  </p> -->
+
+  <div class="content has-text-justified">
+    <p>
+      We compare VChain with baselines and ablation variants, .... (more coming soon)
+    </p>          
+  </div>
+
+  <br>
+  
+  <style>
+    .card-img {
+      border: 2px solid #c1bfbf;
+      border-radius: 8px;
+      padding: 2px;
+      display: inline-block;
+      transition: transform 0.3s ease-in-out;
+      transform-origin: center center;
+    }
+
+    .card-img:active {
+      transform: scale(1.2);
+    }
+  </style>
+
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+
+<style>
+  .dots .dot img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 8px;
+  }
+
+
+  .dots .dot.active img {
+    transform: scale(1.5); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  }
+</style>
+
+<style>
+  .card-img:hover {
+    transform: scale(1.25);
+  }
+</style>
+
+<div class="container blog extra-large white">
+
+
+
+
+<div class="container blog extra-large white">
+
+
+  <!-- A Row of Videos -->
+  <!-- <div class="slide-content" data-slide="0" style="display: block;">
+    <div class="columns-4" style="display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+      <figure style="text-align: center; flex: 1;">
+        <video autoplay controls muted loop playsinline style="width: 100%;">
+          <source src="assets/videos/comparisons/test/1_t2v.mp4" type="video/mp4">
+        </video>
+        <figcaption style="margin-top: 8px;"><b>T2V</b></figcaption>
+      </figure>
+      <figure style="text-align: center; flex: 1;">
+        <video autoplay controls muted loop playsinline style="width: 100%;">
+          <source src="assets/videos/comparisons/test/2_t2v_aug_prompt.mp4" type="video/mp4">
+        </video>
+        <figcaption style="margin-top: 8px;"><b>T2V + Prompt Aug</b></figcaption>
+      </figure>
+      <figure style="text-align: center; flex: 1;">
+        <video autoplay controls muted loop playsinline style="width: 100%;">
+          <source src="assets/videos/comparisons/test/3_t2v_concat_prompt.mp4" type="video/mp4">
+        </video>
+        <figcaption style="margin-top: 8px;"><b>Without Visual Thought</b></figcaption>
+      </figure>
+      <figure style="text-align: center; flex: 1;">
+        <video autoplay controls muted loop playsinline style="width: 100%;">
+          <source src="assets/videos/comparisons/test/4_amt_interpolation.mp4" type="video/mp4">
+        </video>
+        <figcaption style="margin-top: 8px;"><b>Without Sparse Tuning</b></figcaption>
+      </figure>
+      <figure style="text-align: center; flex: 1;">
+        <video autoplay controls muted loop playsinline style="width: 100%;">
+          <source src="assets/videos/comparisons/test/5_vchain_ours.mp4" type="video/mp4">
+        </video>
+        <figcaption style="margin-top: 8px;"><b>VChain (Ours)</b></figcaption>
+      </figure>
+    </div>
+  </div> -->
+
+
+  <!-- CSS：放到 <style> 里 -->
+<style>
+  .video-row{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0,1fr)); /* 5列 */
+    gap: 16px;
+    align-items: start; /* 让卡片顶部对齐 */
+  }
+  .video-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .video-card video{
+    width: 100%;
+    aspect-ratio: 16 / 9;   /* 统一比例，或改 1/1、4/3 等 */
+    height: auto;           /* 等比缩放 */
+    object-fit: cover;      /* 溢出裁切，保证一致外观 */
+    display: block;         /* 去掉行内空隙 */
+  }
+  .video-card figcaption{ margin-top: 8px; font-weight: 700; }
+  /* 响应式：窄屏自动换行 */
+  @media (max-width: 1200px){ .video-row{ grid-template-columns: repeat(3,1fr);} }
+  @media (max-width: 768px){ .video-row{ grid-template-columns: repeat(2,1fr);} }
+</style>
+
+<!-- HTML -->
+<div class="slide-content" data-slide="0" style="display:block;">
+  <div class="video-row">
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/test/1_t2v.mp4" type="video/mp4">
+      </video>
+      <figcaption>T2V</figcaption>
+    </figure>
+
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/test/2_t2v_aug_prompt.mp4" type="video/mp4">
+      </video>
+      <figcaption>T2V + Prompt Aug</figcaption>
+    </figure>
+
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/test/3_t2v_concat_prompt.mp4" type="video/mp4">
+      </video>
+      <figcaption>Without Visual Thought</figcaption>
+    </figure>
+
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/test/4_amt_interpolation.mp4" type="video/mp4">
+      </video>
+      <figcaption>Without Sparse Tuning</figcaption>
+    </figure>
+
+    <figure class="video-card">
+      <video autoplay controls muted loop playsinline>
+        <source src="assets/videos/comparisons/test/5_vchain_ours.mp4" type="video/mp4">
+      </video>
+      <figcaption>VChain (Ours)</figcaption>
+    </figure>
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+</section>
+
+
 <!-- BibTeX -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
