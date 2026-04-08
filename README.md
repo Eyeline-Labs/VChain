@@ -17,6 +17,10 @@
 <sup>1</sup> Nanyang Technological University &nbsp;&nbsp;&nbsp; <sup>2</sup> Eyeline Labs  
 ✉ corresponding authors &nbsp;&nbsp;&nbsp; † project lead
 
+<div align="center">
+    ACL 2026, Findings Paper<br>
+</div>
+
 </div>
 
 
@@ -67,9 +71,9 @@ An overview of our three-stage inference-time pipeline for reasoning in video ge
 If you find our work useful, please consider citing:
 
 ```bibtex
-@article{huang2025vchain,
+@InProceedings{huang2026vchain,
   title={{VChain}: Chain-of-Visual-Thought for Reasoning in Video Generation},
   author = {Huang, Ziqi and Yu, Ning and Chen, Gordon and Qiu, Haonan and Debevec, Paul and Liu, Ziwei},
-  journal={arXiv preprint arXiv:2510.05094},
-  year={2025}
+  booktitle={Annual Meeting of the Association for Computational Linguistics (ACL Findings), 2026},
+  year={2026}
 }
